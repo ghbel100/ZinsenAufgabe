@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zinsrechner</title>
+</head>
+<body>
+<h1>
+    Zinsrechner
+</h1>
+<form method="get">
+  <label for="anfangskapital">Anfangskapital</label>
+    <br>
+  <input type="number" id="anfangskapital" name="anfangskapital">
+    <br>
+  <label for="laufzeit"> Laufzeil</label>
+    <br>
+  <input type="number" id="laufzeit" name="laufzeit">
+    <br>
+  <label for="zinssatz">Zinssats</label>
+    <br>
+  <input type="text" id="zinssatz" name="zinssatz">
+    <br>
+  <button> Aktualisieren</button><br>
+</form>
+
+<h2>Erebnis</h2>
+<p>Bei einer Laufzeit von <span th:text="${laufzeit}">3</span> Jahren bei einem kontostanten
+  Zinssatz von <span th:text="${zinssatz}">0,5</span> % p.a und
+  einem Anfangskapital <span th:text="${anfangskapital}"> 5000,00</span>von Euro,
+  beträgt das Endkapital <span th:text="${endkapital}"> 5075,00 </span> Euro.</p>
+
+</body>
+</html>
